@@ -1,12 +1,4 @@
 
-import imagem1 from '../../../public/assets/Services/imagem1.png'
-import imagem2 from '../../../public/assets/Services/imagem2.png'
-import imagem3 from '../../../public/assets/Services/imagem9.png'
-import imagem4 from '../../../public/assets/Services/imagem4.png'
-import imagem5 from '../../../public/assets/Services/imagem5.png'
-import imagem6 from '../../../public/assets/Services/imagem6.png'
-import imagem7 from '../../../public/assets/Services/imagem7.png'
-import imagem8 from '../../../public/assets/Services/imagem10.png'  
 
 const features = [
     { name: 'Regular Cleaning', description: 'In the hustle and bustle of everyday life, its easy to let household cleaning slide. Thats why we are here to help keep your home fresh, organized, and inviting. Our regular cleaning services are designed to streamline your life and ensure you come home to an immaculate environment every time.' },
@@ -41,44 +33,35 @@ const features = [
             </dl>
           </div>
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+    
             <img
-              src={imagem1.src}
-              alt="Imagem do serviço regular"
+              src='/assets/Services/imagem3.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src={imagem2.src}
-              alt="Top down view of walnut card tray with embedded magnets and card groove."
+              src='/assets/Services/imagem4.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src={imagem3.src}
-              alt="Side of walnut card tray with card groove and recessed card area."
+              src='/assets/Services/imagem5.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src={imagem4.src}
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
+              src='/assets/Services/imagem6.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src={imagem5.src}
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
+              src='/assets/Services/imagem7.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src={imagem6.src}
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100 w-full h-full"
-            />
-            <img
-              src={imagem7.src}
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
-              className="rounded-lg bg-gray-100 w-full h-full"
-            />
-            <img
-              src={imagem8.src}
-              alt="Walnut card tray filled with cards and card angled in dedicated groove."
+              src='/assets/Services/imagem8.png'
+              alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
 
