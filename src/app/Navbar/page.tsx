@@ -30,10 +30,11 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50 bg-white">
+
+    <div className="bg-white z-50 w-full max-w-screen-2xl mx-auto ">
+      <header className="inset-x-0 top-0 ">
   
-        <nav className="flex items-center justify-between p-6 lg:px-8 font-sen" aria-label="Global">
+        <nav className="flex items-center justify-between p-6 lg:px-8 font-sen " aria-label="Global">
           
           <div className="flex lg:flex-1">
             

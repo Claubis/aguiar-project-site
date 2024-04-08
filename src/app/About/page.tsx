@@ -9,10 +9,9 @@ import { faInstagram, faSquareFacebook } from '@fortawesome/free-brands-svg-icon
 import Link from 'next/link';
 
 const links = [
-    { name: 'Cities of operation', href: '#' },
-    { name: 'Bunisses Hours', href: '#' },
-    { name: 'Contact us now', href: '#' },
-    { name: 'Resquest your Quote', href: '#' },
+  { name: 'Resquest your Quote', href: '/FormQuote' },
+  { name: 'Your feedback', href: '/FormFeedback' },
+    
   ]
   const stats = [
     { name: 'North Bend, Issaquah, Sammamish, Mercer Island, Redmond, Bellevue, Kirkland, Woodinville, Bothel, Snohomish, Edmonds, Lake Forest and Mukilteo.', value: 'Cities' },

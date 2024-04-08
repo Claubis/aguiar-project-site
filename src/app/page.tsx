@@ -6,6 +6,7 @@ import Modal from "./Modal/page";
 import About from "./About/page";
 import Services from "./Services/page";
 import FormQuote from "./FormQuote/page";
+import AboutFeedback from "./AboutFeedback/page";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <About/>
       <Services/>
       <FormQuote/>
+      <AboutFeedback/>
     </div>
     
   );
