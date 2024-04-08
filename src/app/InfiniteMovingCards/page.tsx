@@ -123,4 +123,3 @@ export const InfiniteMovingCards = ({
   );
 };
 
-export default InfiniteMovingCards
