@@ -31,7 +31,7 @@ export default function AboutServices() {
 
     return(
 
-            <div className="grid justify-center gap-10 min-h-[70vh] bg-quarta">
+            <div className="grid justify-center min-h-[70vh] bg-quarta">
                 
                 <div className="grid justify-start font-orelega text-6xl p-10 mt-20">
                     <h1>Sobre nossos serviços</h1>

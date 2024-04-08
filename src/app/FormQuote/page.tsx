@@ -8,8 +8,6 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-import imagem from '../../../public/assets/FormQuote/imagem3-removebg-preview.png'
-
 export default function FormQuote() {
   const [agreed, setAgreed] = useState(false)
 
@@ -29,7 +27,7 @@ export default function FormQuote() {
         <h2 className="mt-2 font-sen text-lg leading-8 md:text-2xl md:leading-10">We're looking forward to meeting you and making your home the best place it can be.</h2>
 
         <div className="flex justify-center hidden md:flex">
-            <Image className='' src={imagem.src} width={400} height={300}></Image>
+            <Image className='' src="/assets/FormQuote/imagem3-removebg-preview.png" width={400} height={300} alt='Image about quote'></Image>
         </div>
 
       </div>

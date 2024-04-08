@@ -35,7 +35,12 @@ const features = [
           <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
     
             <img
-              src='/assets/Services/imagem3.png'
+              src='/assets/Services/imagem1.png'
+              alt="Image about services"
+              className="rounded-lg bg-gray-100 w-full h-full"
+            />
+            <img
+              src='/assets/Services/imagem2.png'
               alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />
@@ -60,7 +65,12 @@ const features = [
               className="rounded-lg bg-gray-100 w-full h-full"
             />
             <img
-              src='/assets/Services/imagem8.png'
+              src='/assets/Services/imagem9.png'
+              alt="Image about services"
+              className="rounded-lg bg-gray-100 w-full h-full"
+            />
+            <img
+              src='/assets/Services/imagem10.png'
               alt="Image about services"
               className="rounded-lg bg-gray-100 w-full h-full"
             />

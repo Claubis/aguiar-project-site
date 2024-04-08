@@ -22,7 +22,7 @@ const links = [
   
   export default function About() {
     return (
-      <div className="relative isolate overflow-hidden bg-segunda py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-segunda py-24 sm:py-32 p-0 md:p-20">
         
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           
@@ -53,13 +53,13 @@ const links = [
 
         </div>
 
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-">
             
             <h1 className="font-orelega tracking-tight text-black sm:text-3xl mt-20">Visite nossas redes sociais</h1>
             
             <div className='flex gap-5 mt-5'>
-                <a className='w-10' href="https://www.instagram.com/cleaningaguiar?igsh=bTFrbG5kcnk2N2pq"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-                <a className='w-10' href="https://www.facebook.com/profile.php?id=61556084715198&mibextid=ZbWKwL"><FontAwesomeIcon icon={faSquareFacebook} size="2x" /></a>
+                <a className='w-10' href="https://www.instagram.com/cleaningaguiar?igsh=bTFrbG5kcnk2N2pq" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
+                <a className='w-10' href="https://www.facebook.com/profile.php?id=61556084715198&mibextid=ZbWKwL" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} size="2x" /></a>
             </div>
         </div>
       </div>

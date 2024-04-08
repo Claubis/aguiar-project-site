@@ -40,13 +40,13 @@ export default function FormFeedback(){
 
         <div className="bg-[#9FC6CE] min-h-full md:flex md:justify-center md:content-center ">
 
-            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 mt-20 p-10">
+            <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 p-10">
 
                     <h1 className="text-6xl font-bold tracking-tight text-[#FFFDE0]  uppercase ">We want to hear from you!</h1>
 
-                    <h2 className="mt-2 text-lg leading-8 font-sen">Our survey aims to improve our services and bring more comfort and security to your home.</h2>
+                    <h2 className="mt-2 text-lg md:text-2xl leading-8 font-sen">Our survey aims to improve our services and bring more comfort and security to your home.</h2>
 
-                    <p className="mt-2 text-lg leading-8 font-sen">To participate in our survey, please fill out the form available next to this. Your contribution will allow us to better understand how you value the care of your home.</p>
+                    <p className="mt-2 text-lg md:text-2xl leading-8 font-sen">To participate in our survey, please fill out the form available next to this. Your contribution will allow us to better understand how you value the care of your home.</p>
 
             </div>
 
