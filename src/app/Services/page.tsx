@@ -22,7 +22,7 @@ const features = [
       <div className="bg-white">
         <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
           <div className='grid gap-10'>
-            <h2 className="text-6xl font-bold tracking-tight text-gray-900 sm:text-6xl">Services Offered</h2>
+            <h2 className="text-6xl font-orelega tracking-tight text-gray-900 sm:text-6xl">Services Offered</h2>
             <p className="mt-4 text-gray-500 font-sen">
             Elevate your space to new heights with our unparalleled cleaning solutions, where pristine cleanliness converges with absolute perfection.
             </p>

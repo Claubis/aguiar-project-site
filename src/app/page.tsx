@@ -5,6 +5,7 @@ import HomePage from "./HomePage/page";
 import Modal from "./Modal/page";
 import About from "./About/page";
 import Services from "./Services/page";
+import AboutServices from "./AboutServices/page";
 import FormQuote from "./FormQuote/page";
 import AboutFeedback from "./AboutFeedback/page";
 
@@ -15,6 +16,7 @@ export default function Home() {
       <Modal/>
       <About/>
       <Services/>
+      <AboutServices/>
       <FormQuote/>
       <AboutFeedback/>
     </div>

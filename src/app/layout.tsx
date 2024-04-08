@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 
 import Navbar from "./Navbar/page";
+import Footer from "./Footer/page";
 
 // Definição do tipo para os links do menu
 interface MainMenuLink {
@@ -41,6 +42,7 @@ export default function RootLayout({
       <body>
         <Navbar mainMenuLinks={mainMenuLinks} />
         {children}
+        <Footer/>
         </body>
     </html>
   );

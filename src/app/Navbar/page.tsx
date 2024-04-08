@@ -43,7 +43,7 @@ export default function Navbar() {
               <img
                 className="h-12 w-auto"
                 src={image.src}
-                alt=""
+                alt="Logo da empresa"
               />
             </a>
           </div>
