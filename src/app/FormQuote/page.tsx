@@ -2,39 +2,50 @@
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
+import Image from 'next/image'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+import imagem from '../../../public/assets/FormQuote/imagem3-removebg-preview.png'
+
 export default function FormQuote() {
   const [agreed, setAgreed] = useState(false)
 
   return (
-    <div className="isolate bg-segunda px-6 py-24 sm:py-32 lg:px-8 grid md:flex">
+    <div className="isolate bg-segunda grid md:flex p-5 pt-20 md:pt-0">
      
      {/* Bloco de textos */}
-      <div className="mx-auto max-w-2xl grid justify-center gap-10 text-start  md:flex md:justify-center md:flex-col md:w-[50%] ">
-        <h1 className="text-6xl font-orelega tracking-tight text-gray-900 sm:text-4xl ">Request your Quote</h1>
-        <h2 className="mt-2 text-lg leading-8 font-sen" >Fill out our no-obligation quote form.</h2>
-        <p className="mt-2 text-lg leading-8 font-sen">
+      <div className="mx-auto max-w-2xl grid justify-center md:justify-start gap-5 text-start  md:flex md:flex-col p-0 md:p-10 mt-0 md:mt-20">
+        
+        <h1 className="text-6xl font-orelega tracking-tight text-gray-900">Request your Quote</h1>
+
+        <h2 className="mt-2 leading-8 font-sen text-2xl md:text-4xl" >Fill out our no-obligation quote form.</h2>
+
+        <p className="mt-2 font-sen text-lg leading-8 md:text-2xl md:leading-10">
         Let us take care of your home, allowing you to enjoy your free time for family moments, explore new knowledge, or simply relax.
         </p>
-        <h2 className="mt-2 text-lg leading-8 font-sen">We're looking forward to meeting you and making your home the best place it can be.</h2>
+        <h2 className="mt-2 font-sen text-lg leading-8 md:text-2xl md:leading-10">We're looking forward to meeting you and making your home the best place it can be.</h2>
+
+        <div className="flex justify-center hidden md:flex">
+            <Image className='' src={imagem.src} width={400} height={300}></Image>
+        </div>
+
       </div>
 
         {/* Bloco do formulário */}
-      <div>
+      <div className='w-full'>
         
-        <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20" data-netlify="true">
+        <form action="#" method="POST" className="mx-auto mt-16 md:max-w-[80%] bg-white p-5 rounded-lg" data-netlify="true">
             
-            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 md:flex md:flex-col">
+            <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 md:flex md:flex-col">
 
                 {/* Personal information */}
                 <div className='grid'>
 
                     <div>
-                        <h2 className='font-orelega text-lg mb-5 text-indigo-600'>Personal information</h2>
+                        <h2 className='font-orelega text-lg mb-2 text-indigo-600'>Personal information</h2>
                     </div>
 
                     <div className='grid grid-col-2 gap-5'>
@@ -46,7 +57,7 @@ export default function FormQuote() {
                             First name
                             </label>
 
-                            <div className="mt-2.5">
+                            <div className="mt-1">
                                 <input
                                     type="text"
                                     name="first-name"
@@ -64,7 +75,7 @@ export default function FormQuote() {
                             Last name
                             </label>
 
-                            <div className="mt-2.5">
+                            <div className="mt-1">
                                 <input
                                     type="text"
                                     name="last-name"
@@ -83,7 +94,7 @@ export default function FormQuote() {
                             Email
                             </label>
 
-                            <div className="mt-2.5">
+                            <div className="mt-1">
                                 <input
                                     type="email"
                                     name="email"
@@ -101,7 +112,7 @@ export default function FormQuote() {
                             Phone number
                             </label>
 
-                            <div className="relative mt-2.5">
+                            <div className="relative mt-1">
                                 <div className="absolute inset-y-0 left-0 flex items-center">
                                     <label htmlFor="country" className="sr-only">
                                     Country
@@ -139,7 +150,7 @@ export default function FormQuote() {
                 <div>
 
                     <div>
-                        <h2 className='font-orelega text-lg mb-5 text-indigo-600'>Your address</h2>
+                        <h2 className='font-orelega text-lg mb-2 text-indigo-600'>Your address</h2>
                     </div>
 
                     <div className='grid grid-col-2 gap-5'>
@@ -223,109 +234,113 @@ export default function FormQuote() {
                 <div>
                     
                     <div>
-                        <h2 className='font-orelega text-lg mb-5 text-indigo-600'>Additional  information</h2>
-                    </div>
-                    
-                    {/* Rooms */}
-                    <div className="sm:col-span-2">
-                            
-                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                            How many rooms
-                            </label>
-
-                            <div className="mt-2.5">
-                            
-                            <select
-                            id="room"
-                            name="room"
-                            autoComplete="room"
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                            >
-                            <option>Select an option</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                            <option>Mais</option>
-                            </select>
-                            </div>
+                        <h2 className='font-orelega text-lg mb-2 text-indigo-600'>Additional  information</h2>
                     </div>
 
-                    {/* Frequency */}
-                    <div className="sm:col-span-2">
-                            
-                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                            What is the frequency?
-                            </label>
+                    <div className='flex flex-col md:grid md:grid-cols-2 md:gap-5'>
 
-                            <div className="mt-2.5">
-                            
-                            <select
-                            id="frequency"
-                            name="frequency"
-                            autoComplete="frequency"
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                            >
-                            <option>Select an option</option>
-                            <option>Once</option>
-                            <option>Daily</option>
-                            <option>Weekly</option>
-                            <option>Biweekly</option>
-                            <option>Monthly</option>
-                            </select>
-                            </div>
-                    </div>
+                        {/* Rooms */}
+                        <div>
+                                
+                                <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+                                How many rooms
+                                </label>
 
-                    {/* Pets */}
-                    <div className="sm:col-span-2">
-                            
-                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                            Do you have pets?
-                            </label>
+                                <div className="mt-2.5">
+                                
+                                <select
+                                id="room"
+                                name="room"
+                                autoComplete="room"
+                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                >
+                                <option>Select an option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>Mais</option>
+                                </select>
+                                </div>
+                        </div>
 
-                            <div className="mt-2.5">
-                            
-                            <select
-                            id="pets"
-                            name="pets"
-                            autoComplete="pets"
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                            >
-                            <option>Select an option</option>
-                            <option>Yes</option>
-                            <option>No</option>
-                            </select>
-                            </div>
-                    </div>
+                        {/* Frequency */}
+                        <div>
+                                
+                                <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900 mt-5 md:mt-0">
+                                What is the frequency?
+                                </label>
 
-                    {/* Kind of cleaning */}
-                    <div className="sm:col-span-2">
-                            
-                            <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
-                            What kind of cleaning
-                            </label>
+                                <div className="mt-2.5">
+                                
+                                <select
+                                id="frequency"
+                                name="frequency"
+                                autoComplete="frequency"
+                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                >
+                                <option>Select an option</option>
+                                <option>Once</option>
+                                <option>Daily</option>
+                                <option>Weekly</option>
+                                <option>Biweekly</option>
+                                <option>Monthly</option>
+                                </select>
+                                </div>
+                        </div>
 
-                            <div className="mt-2.5">
-                            
-                            <select
-                            id="kind"
-                            name="kind"
-                            autoComplete="kind"
-                            className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                            >
-                            <option>Select an option</option>
-                            <option>Regular cleaning</option>
-                            <option>Deep</option>
-                            <option>Mov-in or Mov-out</option>
-                            <option>Commercial</option>
-                            <option>Ocasional</option>
-                            </select>
-                            </div>
+                        {/* Pets */}
+                        <div>
+                                
+                                <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900 mt-5 md:mt-0">
+                                Do you have pets?
+                                </label>
+
+                                <div className="mt-2.5">
+                                
+                                <select
+                                id="pets"
+                                name="pets"
+                                autoComplete="pets"
+                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                >
+                                <option>Select an option</option>
+                                <option>Yes</option>
+                                <option>No</option>
+                                </select>
+                                </div>
+                        </div>
+
+                        {/* Kind of cleaning */}
+                        <div>
+                                
+                                <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900 mt-5 md:mt-0">
+                                What kind of cleaning
+                                </label>
+
+                                <div className="mt-2.5">
+                                
+                                <select
+                                id="kind"
+                                name="kind"
+                                autoComplete="kind"
+                                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                                >
+                                <option>Select an option</option>
+                                <option>Regular cleaning</option>
+                                <option>Deep</option>
+                                <option>Mov-in or Mov-out</option>
+                                <option>Commercial</option>
+                                <option>Ocasional</option>
+                                </select>
+                                </div>
+                        </div>
+
                     </div>
 
                 </div>
