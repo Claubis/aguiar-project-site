@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="lg:w-1/3">
 
                         <div>
-                            <span className="self-center text-2xl font-semibold font-orelega text-4xl">Aguiar Cleaning Service</span>
+                            <span className="self-center text-3xl font-semibold font-orelega md:text-2xl">Aguiar Cleaning Service</span>
                         </div>
             
                 </div>

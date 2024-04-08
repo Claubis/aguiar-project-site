@@ -8,6 +8,7 @@ import Services from "./Services/page";
 import AboutServices from "./AboutServices/page";
 import FormQuote from "./FormQuote/page";
 import AboutFeedback from "./AboutFeedback/page";
+import InfiniteMovingCardsDemo from "./InfiniteMovingCardsDemo/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutServices/>
       <FormQuote/>
       <AboutFeedback/>
+      <InfiniteMovingCardsDemo/>
     </div>
     
   );

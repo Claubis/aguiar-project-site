@@ -1,10 +1,10 @@
-import imagem from '../../../public/assets/AboutFeedback/imagem2.png'
+
 
 export default function AboutFeedback() {
   return (
-    <div className="bg-terceira">
-      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8 ">
-        <div className="relative isolate bg-terceira px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+    <div className="bg-terceira min-h-[100vh]">
+      <div className="mx-auto max-w-7xl sm:px-6 ">
+        <div className="relative isolate bg-terceira px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
           
           <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-6xl font-orelega tracking-tight text-black">
@@ -28,7 +28,7 @@ export default function AboutFeedback() {
           <div className="relative mt-16 h-80 lg:mt-8 flex justify-center items-center bg-terceira">
             <img
               className="absolute left-0 top-0 lg:top-20  max-w-none ring-1 ring-white/10 w-[100%] md:w-[400px] h-[100%]"
-              src={imagem.src}
+              src="assets/AboutFeedback/imagem2.png"
               alt="Imagem do feedback"
               width={400}
               height={100}

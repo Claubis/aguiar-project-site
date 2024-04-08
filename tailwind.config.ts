@@ -28,8 +28,35 @@ const config: Config = {
       colors: {
         'menu-hover': 'rgba(54, 190, 200, 0.996)',
       },
+
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase }) {
+  // Definindo as cores específicas
+  const colorVars = {
+    '--segunda': '#E7F1F3',
+    '--terceira': '#CFE3E7',
+    '--quarta': '#B7D4DA',
+    '--quinta': '#9FC6CE',
+  };
+
+  addBase({
+    ':root': colorVars,
+  });
+}
+
 export default config;
