@@ -28,6 +28,7 @@ export default function FormQuote() {
             <p className="mt-2 font-sen text-lg leading-8 md:text-2xl md:leading-10">
             Let us take care of your home, allowing you to enjoy your free time for family moments, explore new knowledge, or simply relax.
             </p>
+
             <h2 className="mt-2 font-sen text-lg leading-8 md:text-2xl md:leading-10">We're looking forward to meeting you and making your home the best place it can be.</h2>
 
             <div className="flex justify-center hidden md:flex">
@@ -39,7 +40,10 @@ export default function FormQuote() {
             {/* Bloco do formulário */}
         <div className='w-full mt-20'>
             
-            <form action="#" method="POST" className="mx-auto mt-16 md:max-w-[80%] bg-white p-5 rounded-lg" data-netlify="true">
+            <form 
+            action="#" 
+            method="POST" 
+            className="mx-auto mt-16 md:max-w-[80%] bg-white p-5 rounded-lg" data-netlify="true">
                 
                 <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 md:flex md:flex-col">
 
@@ -114,26 +118,6 @@ export default function FormQuote() {
                                 Phone number
                                 </label>
 
-                                <div className="relative mt-1">
-                                    <div className="absolute inset-y-0 left-0 flex items-center">
-                                        <label htmlFor="country" className="sr-only">
-                                        Country
-                                        </label>
-                                        <select
-                                        id="country"
-                                        name="country"
-                                        className="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-                                        >
-                                        <option>US</option>
-                                        <option>CA</option>
-                                        <option>EU</option>
-                                        </select>
-                                        <ChevronDownIcon
-                                        className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                                        aria-hidden="true"
-                                        />
-                                    </div>
-                                
                                 <input
                                     type="tel"
                                     name="phone-number"
@@ -141,7 +125,7 @@ export default function FormQuote() {
                                     autoComplete="tel"
                                     className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 />
-                                </div>
+                                
                             </div>
 
                         </div>
@@ -166,7 +150,7 @@ export default function FormQuote() {
                                     <div className="mt-2.5">
                                     
                                         <input
-                                            type="number"
+                                            type="text"
                                             name="address"
                                             id="address"
                                             autoComplete="address"

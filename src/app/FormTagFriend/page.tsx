@@ -37,12 +37,17 @@ export default function FormTagFriend() {
       </div>
 
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20" name='formulario-refer-friend' data-netlify="true">
+        
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+          
           <div>
+            
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
               Your First name
             </label>
+            
             <div className="mt-2.5">
+              
               <input
                 type="text"
                 name="first-name"
@@ -52,10 +57,13 @@ export default function FormTagFriend() {
               />
             </div>
           </div>
+          
           <div>
+            
             <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
             Name of Your Referral
             </label>
+            
             <div className="mt-2.5">
               <input
                 type="text"
@@ -81,8 +89,11 @@ export default function FormTagFriend() {
                 placeholder='Enter your friends email' 
               />
             </div>
+
           </div>
+
           <div className="sm:col-span-2">
+            
             <label htmlFor="phone-number" className="block text-sm font-semibold leading-6 text-gray-900">
               Phone number
             </label>
@@ -97,12 +108,17 @@ export default function FormTagFriend() {
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
+
           </div>
+
           <div className="sm:col-span-2">
+            
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
               Message
             </label>
+
             <div className="mt-2.5">
+              
               <textarea
                 name="message"
                 id="message"
@@ -111,7 +127,9 @@ export default function FormTagFriend() {
                 defaultValue={''}
               />
             </div>
+
           </div>
+
         </div>
 
         <div className="mt-10 flex justify-center">
@@ -122,7 +140,9 @@ export default function FormTagFriend() {
           >
             Send and enjoy
           </button>
+
         </div>
+        
       </form>
     </div>
   )
