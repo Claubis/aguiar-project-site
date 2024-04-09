@@ -12,8 +12,39 @@ function classNames(...classes: (string | undefined | null | boolean)[]): string
 export default function FormTagFriend() {
   const [agreed, setAgreed] = useState(false)
 
+  const [formData, setFormData] = useState({
+    firstName: '',
+    referralName: '',
+    email: '',
+    phoneNumber: '',
+    message: ''
+  });
+  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const handleChange = (e:any) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e:any) => {
+    e.preventDefault();
+    console.log(formData);
+    setFormSubmitted(true);
+  };
+
   return (
+    
     <div className="isolate bg-[white] px-6 py-10 lg:px-8">
+
+      {/* Se o formulário foi enviado com sucesso, exiba uma mensagem */}
+      {formSubmitted && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+          <strong>Formulário enviado com sucesso!</strong>
+        </div>
+      )}
       
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -40,7 +71,8 @@ export default function FormTagFriend() {
       method="POST" 
       className="mx-auto mt-16 max-w-xl sm:mt-20" 
       name='formulario-refer-friend' 
-      data-netlify="true">
+      data-netlify="true"
+      onSubmit={handleSubmit}>
         
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           
@@ -54,9 +86,11 @@ export default function FormTagFriend() {
               
               <input
                 type="text"
-                name="first-name"
-                id="first-name"
-                autoComplete="given-name"
+                name="firstName"
+                id="firstName"
+                autoComplete="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -71,9 +105,11 @@ export default function FormTagFriend() {
             <div className="mt-2.5">
               <input
                 type="text"
-                name="name-referral"
-                id="name-referral"
-                autoComplete="referral-name"
+                name="referralName"
+                id="referralName"
+                autoComplete="referralName"
+                value={formData.referralName}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -89,6 +125,8 @@ export default function FormTagFriend() {
                 name="email"
                 id="email"
                 autoComplete="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 placeholder='Enter your friends email' 
               />
@@ -106,9 +144,11 @@ export default function FormTagFriend() {
               
               <input
                 type="tel"
-                name="phone-number"
-                id="phone-number"
-                autoComplete="tel"
+                name="phoneNumber"
+                id="phoneNumber"
+                autoComplete="phoneNumber"
+                value={formData.phoneNumber}
+                onChange={handleChange}
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
@@ -126,9 +166,11 @@ export default function FormTagFriend() {
               <textarea
                 name="message"
                 id="message"
+                autoComplete="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                defaultValue={''}
               />
             </div>
 
