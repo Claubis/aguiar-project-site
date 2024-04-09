@@ -19,12 +19,13 @@ export default function FormTagFriend() {
     phoneNumber: '',
     message: ''
   });
+
   const [formSubmitted, setFormSubmitted] = useState(false);
 
   const handleChange = (e:any) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
+    setFormData((FormData) => ({
+      ...FormData,
       [name]: value
     }));
   };
@@ -38,13 +39,6 @@ export default function FormTagFriend() {
   return (
     
     <div className="isolate bg-[white] px-6 py-10 lg:px-8">
-
-      {/* Se o formulário foi enviado com sucesso, exiba uma mensagem */}
-      {formSubmitted && (
-        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
-          <strong>Formulário enviado com sucesso!</strong>
-        </div>
-      )}
       
       <div
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -66,6 +60,13 @@ export default function FormTagFriend() {
         Share the experience! Refer a friend, and both of you can enjoy exclusive benefits. Fill out the form below to get started.
         </p>
       </div>
+
+      {/* Se o formulário foi enviado com sucesso, exiba uma mensagem */}
+      {formSubmitted && (
+        <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+          <strong>Formulário enviado com sucesso!</strong>
+        </div>
+      )}
 
       <form
       method="POST" 
@@ -178,18 +179,16 @@ export default function FormTagFriend() {
 
         </div>
 
-        <div className="mt-10 flex justify-center">
+        <div className="mt-10 flex justify-center block w-lg rounded-md bg-[#9FC6CE] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#CFE3E7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
           
-          <button
-            type="submit"
-            className="block w-lg rounded-md bg-[#9FC6CE] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#CFE3E7] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >
+          <button type="submit">
             Send and enjoy
           </button>
 
         </div>
         
       </form>
+
     </div>
   )
 }
