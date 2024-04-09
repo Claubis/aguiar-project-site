@@ -4,9 +4,10 @@ import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
+function classNames(...classes: (string | undefined | null | boolean)[]): string {
+  return classes.filter(Boolean).join(' ');
 }
+
 
 export default function FormTagFriend() {
   const [agreed, setAgreed] = useState(false)
