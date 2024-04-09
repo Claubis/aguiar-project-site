@@ -41,8 +41,8 @@ export default function FormQuote() {
         <div className='w-full mt-20'>
             
             <form 
-            action="#" 
-            method="POST" 
+            name='form-quote'
+            method="POST"
             className="mx-auto mt-16 md:max-w-[80%] bg-white p-5 rounded-lg" data-netlify="true">
                 
                 <div className="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2 md:flex md:flex-col">
