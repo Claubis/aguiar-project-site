@@ -13,6 +13,7 @@ import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 const navigation = [
   { name: 'Home', href: './' },
@@ -24,7 +25,10 @@ const navigation = [
 ]
 
 export default function Navbar() {
+  
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const [activeItem, setActiveItem] = useState('');
 
   return (
 
@@ -57,7 +61,12 @@ export default function Navbar() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-xl font-light leading-6 text-gray-900 hover:text-menu-hover">
+              <a key={item.name} 
+              href={item.href} 
+              onMouseOver={() => setActiveItem(item.name)} // Adiciona o item ativo ao passar o mouse
+                onClick={() => setActiveItem(item.name)} // Mantém o item ativo ao clicar
+                className={`text-xl font-light leading-6 text-gray-900 hover:text-menu-hover navItem ${activeItem === item.name ? 'border-b-2 border-menu-hover' : ''}`}
+              >
                 {item.name}
               </a>
             ))}

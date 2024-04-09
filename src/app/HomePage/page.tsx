@@ -8,7 +8,7 @@ export default function HomePage() {
   
 
   return (
-    <div className="bg-primeira h-[75vh] flex justify-center items-center mb-20">
+    <div className="bg-primeira h-[90vh] flex justify-center items-center mb-20">
       
       <div className="relative isolate px-6 md:pt-14 lg:px-8">
         

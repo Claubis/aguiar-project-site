@@ -45,7 +45,9 @@ const config: Config = {
   plugins: [addVariablesForColors],
 };
 
-function addVariablesForColors({ addBase }) {
+/* Instalar npm install @types/tailwindcss --save-dev */
+
+function addVariablesForColors({ addBase }: { addBase: any }) {
   // Definindo as cores específicas
   const colorVars = {
     '--segunda': '#E7F1F3',
