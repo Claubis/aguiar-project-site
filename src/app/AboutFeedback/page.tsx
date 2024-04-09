@@ -6,7 +6,7 @@ export default function AboutFeedback() {
       <div className="mx-auto max-w-7xl sm:px-6 ">
         <div className="relative isolate bg-terceira px-6 pt-16 sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-10 lg:pt-0">
           
-          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+          <div className="mx-auto max-w-md lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-6xl font-orelega tracking-tight text-black">
               Avalie sua experiência</h2>
             <h3 className='mt-6 leading-8 font-sen text-lg md:text-2xl'>Se você já nos visitou, não se esqueça de fazer sua avaliação.</h3>

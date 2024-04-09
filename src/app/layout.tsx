@@ -12,21 +12,6 @@ export const metadata: Metadata = {
 import Navbar from "./Navbar/page";
 import Footer from "./Footer/page";
 
-// Definição do tipo para os links do menu
-interface MainMenuLink {
-  url: string;
-  label: string;
-}
-
-const mainMenuLinks: MainMenuLink[] = [
-  { url: 'home', label: 'Home' },
-  { url: 'company', label: 'Company' },
-  { url: 'services', label: 'Services' },
-  { url: 'quote', label: 'Quote' },
-  { url: 'feedback', label: 'Feedback' },
-  { url: 'contact', label: 'Contact' }
-];
-
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -40,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar mainMenuLinks={mainMenuLinks} />
+        <Navbar/>
         {children}
         <Footer/>
         </body>

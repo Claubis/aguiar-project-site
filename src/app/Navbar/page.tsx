@@ -7,15 +7,12 @@ npm install @heroicons/react
 
 */
 
+
 /* Importações gerais */
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
-
-/* Importação das imagens */
-import image from '../../../public/assets/Navbar/Captura de tela 2024-02-13 124000.png'
-
 
 const navigation = [
   { name: 'Home', href: './' },
@@ -31,7 +28,7 @@ export default function Navbar() {
 
   return (
 
-    <div className="bg-white z-50 w-full max-w-screen-2xl mx-auto ">
+    <div className="bg-white z-50 fixed w-full">
       <header className="inset-x-0 top-0 ">
   
         <nav className="flex items-center justify-between p-6 lg:px-8 font-sen " aria-label="Global">
@@ -42,7 +39,7 @@ export default function Navbar() {
               <span className="sr-only">Aguiar Cleaning Service</span>
               <img
                 className="h-12 w-auto"
-                src={image.src}
+                src="/assets/Navbar/Captura de tela 2024-02-13 124000.png"
                 alt="Logo da empresa"
               />
             </a>
@@ -76,7 +73,7 @@ export default function Navbar() {
                 <span className="sr-only">Your Company</span>
                 <img
                   className="h-8 w-auto"
-                  src={image.src}
+                  src="/assets/Navbar/Captura de tela 2024-02-13 124000.png"
                   alt="Imagem do logo da empresa"
                 />
               </a>

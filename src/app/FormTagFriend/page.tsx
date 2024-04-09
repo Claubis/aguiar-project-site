@@ -29,8 +29,8 @@ export default function FormTagFriend() {
         />
       </div>
       
-      <div className="mx-auto max-w-2xl grid gap-10">
-        <h2 className="text-5xl font-bold tracking-tight text-gray-900">Refer Your Friend</h2>
+      <div className="mx-auto max-w-2xl grid gap-10 mt-20">
+        <h2 className="text-5xl font-bold tracking-tight text-gray-900 mt-20">Refer Your Friend</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
         Share the experience! Refer a friend, and both of you can enjoy exclusive benefits. Fill out the form below to get started.
         </p>

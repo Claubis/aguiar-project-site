@@ -42,7 +42,7 @@ export default function FormFeedback(){
 
             <div className="w-[100%] md:pl-10 flex flex-col justify-center gap-10 p-10">
 
-                    <h1 className="text-6xl font-bold tracking-tight text-[#FFFDE0]  uppercase ">We want to hear from you!</h1>
+                    <h1 className="text-6xl font-bold tracking-tight text-[#FFFDE0] uppercase mt-20 md:mt-0">We want to hear from you!</h1>
 
                     <h2 className="mt-2 text-lg md:text-2xl leading-8 font-sen">Our survey aims to improve our services and bring more comfort and security to your home.</h2>
 

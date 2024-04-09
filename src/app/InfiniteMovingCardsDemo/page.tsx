@@ -5,26 +5,31 @@ import { InfiniteMovingCards } from "./InfiniteMovingCards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="min-h-[100vh] rounded-md flex flex-col antialiased bg-white   relative overflow-hidden">
 
-        <div className="font-orelega text-6xl p-10 mt-20 md:mt-0 text-black">
-            <h1>See what our customers</h1>
+    <div className="bg-white">
 
-            <h2>think about us</h2>
-        </div>
+      <div className="min-h-[100vh] rounded-md flex flex-col antialiased bg-white relative  max-w-[1280px] mx-auto">
 
-        <div className="p-10 text-xl font-sen">
-            <p>These are feedbacks that were given after we performed the services.</p>
-        </div>
+          <div className="font-orelega text-6xl p-10 mt-20 md:mt-0 text-black">
+              <h1>See what our customers</h1>
 
-        <div>
-            <InfiniteMovingCards
-                items={comentarios}
-                direction="right"
-                speed="slow"
-                className="font-sen"
-            />
-        </div>
+              <h2>think about us</h2>
+          </div>
+
+          <div className="p-10 text-xl font-sen">
+              <p>These are feedbacks that were given after we performed the services.</p>
+          </div>
+
+          <div>
+              <InfiniteMovingCards
+                  items={comentarios}
+                  direction="right"
+                  speed="slow"
+                  className="font-sen"
+              />
+          </div>
+
+      </div>
 
     </div>
   );
