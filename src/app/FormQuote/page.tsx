@@ -4,9 +4,10 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
 import Image from 'next/image'
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+function classNames(...classes: (string | undefined | null | boolean)[]): string {
+    return classes.filter(Boolean).join(' ');
+  }
+  
 
 export default function FormQuote() {
   const [agreed, setAgreed] = useState(false)
