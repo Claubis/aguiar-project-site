@@ -12,8 +12,7 @@ npm install @heroicons/react
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import Link from 'next/link'
-import { useRouter } from 'next/router';
+
 
 const navigation = [
   { name: 'Home', href: './' },
@@ -59,6 +58,7 @@ export default function Navbar() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
+          
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a key={item.name} 
