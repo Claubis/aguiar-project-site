@@ -58,8 +58,10 @@ const links = [
             <h1 className="font-orelega tracking-tight text-black sm:text-3xl mt-20">Visite nossas redes sociais</h1>
             
             <div className='flex gap-5 mt-5'>
-                <a className='w-10' href="https://www.instagram.com/cleaningaguiar?igsh=bTFrbG5kcnk2N2pq" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-                <a className='w-10' href="https://www.facebook.com/profile.php?id=61556084715198&mibextid=ZbWKwL" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} size="2x" /></a>
+                
+                <Link className='w-10' href="https://www.instagram.com/cleaningaguiar?igsh=bTFrbG5kcnk2N2pq" target="_blank"><FontAwesomeIcon icon={faInstagram} size="2x" /></Link>
+                
+                <Link className='w-10' href="https://www.facebook.com/profile.php?id=61556084715198&mibextid=ZbWKwL" target="_blank"><FontAwesomeIcon icon={faSquareFacebook} size="2x" /></Link>
             </div>
         </div>
       </div>

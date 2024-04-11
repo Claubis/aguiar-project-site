@@ -20,7 +20,7 @@ const navigation = [
   { name: 'Services', href: '/Services' },
   { name: 'Quote', href: '/FormQuote' },
   { name: 'Feedback', href: '/FormFeedback' },
-  { name: 'Contact', href: '#' },
+  { name: 'Contact', href: '"tel:+4259849284"' },
 ]
 
 export default function Navbar() {
@@ -31,7 +31,7 @@ export default function Navbar() {
 
   return (
 
-    <div className="bg-white z-50 fixed w-full">
+    <div className="bg-white w-full">
       <header className="inset-x-0 top-0 ">
   
         <nav className="flex items-center justify-between p-6 lg:px-8 font-sen " aria-label="Global">

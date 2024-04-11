@@ -8,9 +8,9 @@ export default function InfiniteMovingCardsDemo() {
 
     <div className="bg-white">
 
-      <div className="min-h-[100vh] rounded-md flex flex-col antialiased bg-white relative  max-w-[1280px] mx-auto">
+      <div className="min-h-[100vh] rounded-md flex flex-col antialiased bg-white relative mx-auto">
 
-          <div className="font-orelega text-6xl p-10 mt-20 md:mt-0 text-black">
+          <div className="font-orelega text-4xl md:text-6xl p-10 mt-10 md:mt-20">
               <h1>See what our customers</h1>
 
               <h2>think about us</h2>

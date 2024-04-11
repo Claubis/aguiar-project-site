@@ -1,14 +1,12 @@
 'use client'
-import { useState } from 'react'
-import { Dialog } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+import Link from "next/link"
 
 export default function HomePage() {
   
 
   return (
-    <div className="bg-primeira h-[60rem] md:h-[95vh] flex justify-center items-center">
+    <div className="bg-primeira flex justify-center items-center">
       
       <div className="relative isolate px-6 md:pt-14 lg:px-8">
         
@@ -21,6 +19,7 @@ export default function HomePage() {
               
             </div>
           </div>
+
           <div className="text-center">
             
             <h1 className="text-6xl font-orelega tracking-tight text-gray-900">
@@ -34,12 +33,13 @@ export default function HomePage() {
             <div className="mt-6 grid md:flex items-center justify-center md:justify-center gap-x-6">
 
               <div>
-                <a
+                <Link
                 href="/FormQuote"
                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-orelega text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 w-full md:w-[40%]"
               >
                 Request your quote
-              </a>
+              </Link>
+              
               </div>
 
               <div>

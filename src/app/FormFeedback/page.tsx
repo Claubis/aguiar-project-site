@@ -60,7 +60,7 @@ export default function FormFeedback(){
 
                     <div className="">
                         
-                        <label className="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
+                        <label className="block mb-2 text-sm font-sen text-gray-900 ">Name</label>
                         
                         <input 
                         id='name'
@@ -72,7 +72,7 @@ export default function FormFeedback(){
                     
                     <div className="mx-auto mt-10"> 
 
-                        <label className="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                        <label className="block mb-2 text-sm font-sen text-gray-900">Your email</label>
 
                         <input 
                         name='email' 
@@ -98,7 +98,7 @@ export default function FormFeedback(){
                     
                     <div className="mx-auto mt-20">
 
-                        <label className="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                        <label className="block mb-2 text-sm font-sen text-gray-900">Your message</label>
 
                         <textarea 
                         name='message' 

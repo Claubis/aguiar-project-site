@@ -16,12 +16,12 @@ export default function FormQuote() {
 
     <div className='bg-segunda'>
         
-        <div className="isolate bg-segunda grid md:flex p-5 pt-20 md:pt-0 max-w-[1280px] mx-auto min-h-[100vh]">
+        <div className="isolate bg-segunda grid md:flex p-5 pt-20 md:pt-0 mx-auto min-h-[100vh]">
         
         {/* Bloco de textos */}
-        <div className="mx-auto max-w-2xl grid justify-center md:justify-start gap-5 text-start  md:flex md:flex-col p-0 md:p-10 mt-0 md:mt-20">
+        <div className="mx-auto max-w-2xl grid justify-center md:justify-start gap-5 text-start  md:flex md:flex-col p-0 md:p-10 mt-0 md:mt-10">
             
-            <h1 className="text-6xl font-orelega tracking-tight text-gray-900 mt-20 ">Request your Quote</h1>
+            <h1 className="text-6xl font-orelega tracking-tight text-gray-900 mt-0 md:mt-20 ">Request your Quote</h1>
 
             <h2 className="mt-2 leading-8 font-sen text-2xl md:text-4xl" >Fill out our no-obligation quote form.</h2>
 
@@ -38,7 +38,7 @@ export default function FormQuote() {
         </div>
 
             {/* Bloco do formulário */}
-        <div className='w-full mt-20'>
+        <div className='w-full mt-0 md:mt-20'>
             
             <form 
             name='form-quote'
