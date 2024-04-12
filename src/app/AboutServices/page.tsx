@@ -35,7 +35,7 @@ export default function AboutServices() {
                 <div className="mx-auto grid justify-center min-h-[70vh] bg-quarta max-w-[1280px]">
 
                     <div className="grid justify-start font-orelega text-6xl p-10 mt-20">
-                        <h1>Sobre nossos serviços</h1>
+                        <h1>About Our Services</h1>
                     </div>
 
                     <div className="relative flex items-center justify-center w-4/5 mx-auto">

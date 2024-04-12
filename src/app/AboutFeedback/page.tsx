@@ -1,6 +1,5 @@
 
 import Link from "next/link"
-import Image from "next/image"
 
 export default function AboutFeedback() {
   return (
@@ -11,11 +10,11 @@ export default function AboutFeedback() {
           
           <div className="mx-auto max-w-md lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
             <h2 className="text-6xl font-orelega tracking-tight text-black">
-              Avalie sua experiência</h2>
-            <h3 className='mt-6 leading-8 font-sen text-lg md:text-2xl'>Se você já nos visitou, não se esqueça de fazer sua avaliação.</h3>
+            Rate Your Experience</h2>
+            <h3 className='mt-6 leading-8 font-sen text-lg md:text-2xl'>If you have already visited us, don't forget to leave your review.</h3>
               
             <p className="mt-6 text-lg leading-8 font-sen md:text-2xl">
-            Como foi sua experiência com nosso serviço? Seu feedback é essencial para nós, pois nos ajuda a aprimorar nossos produtos e serviços para atender melhor às suas preferências.
+            How was your experience with our service? Your feedback is crucial to us as it helps us improve our products and services to better meet your preferences.
             </p>
             
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
